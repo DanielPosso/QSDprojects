@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | Trabajo en clase</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <h1>Rellena tu CV</h1>
+            <div>
+                <label for="">Nombre</label><br>
+                <input type="text" maxlength="30" required>
+            </div>
+            <div>
+                <label>Apellidos</label><br>
+                <input type="text" name="apellidos" maxlength="80" size="40" required>
+            </div>
+            <div>
+                <label>Contraseña</label><br>
+                <input type="password" maxlength="10" required>
+            </div>
+            <div>
+                <label>DNI</label><br>
+                <input type="number" min="0" required>
+                <!--No sé como ponner exactamente el # de dígitos que tiene el DNI-->
+            </div>
+            <label>Sexo</label><br>
+            <input type="radio" name="pregunta">Masculino<br>
+            <input type="radio" name="pregunta">Femenino
+            <div><br>
+                <div>
+                    <label>Incluir mi foto </label>
+                    <input>
+                    <input type="button" value="Elegir...">
+                    <!--Fue la única forma que encontré para que quedara exactamente igual a la foto pero no es un type=file propiamente.-->
+                </div><br>
+                <div>
+                    <input type="checkbox" checked>
+                    <label>Suscribirme al boletin de novedades</label><br>
+                </div><br>
+                <div>
+                    <input type="submit" value="Guardar cambios">
+                </div>
+        </form>
+    </main>
+</body>
+
+</html>
