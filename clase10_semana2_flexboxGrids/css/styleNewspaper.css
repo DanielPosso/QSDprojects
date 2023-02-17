@@ -1,0 +1,42 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.containerPrin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerMain {
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid rgb(133, 235, 235);
+    padding: 1em;
+    margin: 0;
+}
+
+.containerMain h1 {
+    text-align: center;
+}
+
+.containerVid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+}
+
+aside {
+    width: 30%;
+    padding: 0.8em;
+    border: 2px solid rgb(64, 182, 250);
+}
+
+aside h4 p {
+    text-align: center;
+}
