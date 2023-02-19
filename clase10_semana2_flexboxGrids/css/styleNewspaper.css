@@ -4,27 +4,46 @@
     box-sizing: border-box;
 }
 
+.landingPage {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f3f3;
+    padding: 30px 30px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 30px 30px 30px rgba(0.30, 0.30, 0.30, 0.30);
+}
+
 /*Nav Bar*/
 
-header{
+header {
     position: sticky;
     top: 0;
 }
 
-.navBar{
-    background: linear-gradient( rgb(95, 95, 97), rgb(5, 5, 5));
+.navBar {
+    background: linear-gradient(rgb(95, 95, 97), rgb(5, 5, 5));
     color: #fff;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.containerNavbar{
+.containerNavbar {
     display: flex;
     height: 10vh;
 }
 
-.containerNavbar ul{
+.containerNavbar ul {
     display: flex;
     justify-content: space-evenly;
     padding-left: 0;
@@ -35,10 +54,10 @@ header{
     list-style-type: none;
 }
 
-.containerNavbar ul a{
+.containerNavbar ul a {
     text-decoration: none;
     color: #ffffff;
-    
+
 }
 
 .containerNavbar ul a:hover {
@@ -48,7 +67,7 @@ header{
     font-size: 1.1em;
 }
 
-.containerNavbar form{
+.containerNavbar form {
     width: 40%;
     display: flex;
     padding: 0.6em;
@@ -59,7 +78,7 @@ header{
 
 /*Zona main*/
 
-.containerPrin{
+.containerPrin {
     display: flex;
     margin: 0;
     border: 0;
@@ -79,14 +98,14 @@ header{
     padding: 1em;
 }
 
-.containerItems{
+.containerItems {
     padding: 1em;
     background-color: #fff;
     box-shadow: 5px 10px 5px 5px rgb(206, 201, 201);
     border-radius: 1em;
 }
 
-.containerItems h2{
+.containerItems h2 {
     padding: 0.5em;
     font-size: 1.3em;
     font-weight: 600;
@@ -116,7 +135,7 @@ aside h4 p {
 
 /*Zona footer*/
 
-footer{
+footer {
     display: flex;
     justify-content: baseline;
     height: 10vh;
@@ -124,7 +143,7 @@ footer{
     color: #fff;
 }
 
-footer p{
+footer p {
     text-align: center;
     padding-top: 0.7em;
     font-size: 1.3em;
@@ -132,11 +151,12 @@ footer p{
 
 /*****Páginas del sitio web*****/
 
-/*Flexbox*/ /*Grids*/
+/*Flexbox*/
+/*Grids*/
 
 .containerFlexbox,
 .containerGrids,
-.containerBootstrap{
+.containerBootstrap {
     padding: 1em;
     margin: 1em;
     text-align: justify;
@@ -146,5 +166,4 @@ footer p{
     justify-items: center;
     border-radius: 0.4em;
     box-shadow: 5px 10px 5px 5px rgb(206, 201, 201);
-    
 }
