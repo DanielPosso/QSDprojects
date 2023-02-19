@@ -9,154 +9,169 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/styleNewspaper.css">
     <!--BootsWatch-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css"
-        integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+        integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css"
+        integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+    <!--Animations-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./assets/noticias.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarColor02" style="">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="search" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
+        <nav class="navBar">
+            <div class="containerNavbar">
+                <ul>
+                    <li>
+                        <img src="./assets/css-3.png" width="30em">
+                        <a class="mainNameNavbar" href="./newspaper.html">Newspaper</a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./pages/Flexbox.html">Flexbox
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./pages/grids.html">Grids</a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./pages/bootstrap.html">BootStrap</a>
+                    </li>
+                </ul>
+                <form>
+                    <input type="search" placeholder="Search">
+                    <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
             </div>
         </nav>
     </header>
-    <div class="container-fluid d-flex justify-content-center" style="margin: 0; padding: 0;">
-        <main>
-            <div class="containerMain">
-                <div>
-                    <h1>Newspaper | Semana 2</h1>
+    <div class="containerPrin">
+        <main class="containerMain">
+            <div>
+                <h1 class="animate__animated animate__pulse">Newspaper | Semana 2</h1>
+            </div>
+            <div class="containerItems">
+                <p>
+                    En esta semana se abordó todo el tema de CSS sobre organización de contenido con la ayuda de las
+                    herramientas listadas abajo.
+                    Comenzando con el útil box modeling, pasando por flexbox hasta llegar a la poderosa herramienta de
+                    Grids; casualmente la realización de este sitio web cuenta con el uso de la mayoría de estas
+                    herramientas. Presiona la tecla F12 de tu navegador y podrás comprobarlo por ti mism@.
+                </p>
+                <h2>Aquí te dejo algunos videos relacionados con los temas de la semana.</h2>
+                <ul>
+                    <li>CSS general</li>
+                    <li>Box Modeling</li>
+                    <li>FlexBox</li>
+                    <li>Grids</li>
+                    <li>BootStrap</li>
+                    <li>SASS</li>
+                </ul>
+            </div>
+            <div class="containerVid">
+                <div class="bg-secondary mb-3" style="max-width: 20rem; border-radius: 1em;">
+                    <div class="card-header">CSS general</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial CSS</h4>
+                        <div>
+                            <iframe src="https://www.youtube.com/embed/OWKXEJN67FE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="card-text">SoyDalto, youtuber y programador Argentino</p>
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        Aquí te dejo algunos videos relacionados con los temas de la semana.
-                    <ul>
-                        <li>CSS general</li>
-                        <li>Box Modeling</li>
-                        <li>FlexBox</li>
-                        <li>Grids</li>
-                        <li>BootStrap</li>
-                        <li>SASS</li>
-                    </ul>
-
-                    </p>
+                <div class="bg-secondary mb-3" style="max-width: 20rem; border-radius: 1em;">
+                    <div class="card-header">Box Modeling</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial Box Modeling</h4>
+                        <iframe src="https://www.youtube.com/embed/-ivUAB-aG2U" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p class="card-text">Dorian Desings, introcucción al Box model.</p>
+                    </div>
                 </div>
-                <div class="containerVid">
-                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
+                <div class="bg-secondary mb-3" style="max-width: 20rem; border-radius: 1em;">
+                    <div class="card-header">FlexBox</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial FlexBox</h4>
+                        <iframe src="https://www.youtube.com/embed/QFXSgGg-HWo" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p class="card-text">Victor Robles, aprende las bases de flexbox en tan solo 15min</p>
                     </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
+                </div>
+                <div class="bg-secondary mb-3" style="max-width: 20rem; border-radius: 1em;">
+                    <div class="card-header">Grids</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial Grids</h4>
+                        <iframe src="https://www.youtube.com/embed/9zA8cB-54SA" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p class="card-text">De cero a pro con Tyler Potts, 40min de puro contenido sobre grids.</p>
                     </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
+                </div>
+                <div class="bg-secondary mb-3" style="max-width: 20rem; border-radius: 1em;">
+                    <div class="card-header">BootStrap</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial BootStrap</h4>
+                        <iframe src="https://www.youtube.com/embed/XXllX0A_9KQ" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p class="card-text">The Coder Cave esp, te muestra las bases de bootstrap en 10min.</p>
                     </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h4 class="card-title">Primary card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                        </div>
+                </div>
+                <div class="bg-secondary mb-3" style="max-width: 20rem; border-radius: 1em;">
+                    <div class="card-header">SCSS </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Tutorial SASS</h4>
+                        <iframe src="https://www.youtube.com/embed/BtiiM3jeb_c" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p class="card-text">De nuevo Victor Robles muestra las bases de SCSS mejor conocido como
+                            "SASS", en tan solo 15min</p>
                     </div>
                 </div>
             </div>
         </main>
         <aside>
-            <h4>Datos curiosos de la semana</h4>
-            <p>A continuación encontrarás los respectivos enlaces al resto del sitio web</p>
+            <h4>Datos curiosos de la semana</h4><br>
+            <p>A continuación encontrarás los respectivos enlaces a las noticias del mundo</p><br><br>
             <ul>
-                <li><a href="./pages/Flexbox.html">FlexBox</a></li>
-                <li><a href="./pages/grids.html">Grids</a></li>
-                <li><a href="./pages/bootstrap.html">BootStrap</a></li>
+                <li>
+                    <a href="https://www.cnet.com/tech/computing/why-were-all-obsessed-with-the-mind-blowing-chatgpt-ai-chatbot/"
+                        target="_blank">Chat GPT</a>
+                    <p>Una de los mejores ejemplos sobre el uso de AI.</p><br><br>
+                </li>
+                <li>
+                    <a href="https://github.com/features/copilot" target="_blank">GitHub copilot</a>
+                    <p>Prueba tu susbcripción gratis por 60 días en el copiloto de GitHub que te servirá como un tutor
+                        al esccribir código.</p>
+                </li><br><br>
+                <li>
+                    <a href="https://www.nature.com/subjects/machine-learning" target="_blank">Machine learning</a>
+                    <p>Todas las noticias de actialidad por parte del gigante Nature</p>
+                </li>
             </ul>
+            <p>
+            <ul>
+                <li><a href=""></a> WhatsApp</li>
+                <li><a href=""></a> Intagram</li>
+                <li><a href=""></a> GitHub</li>
+            </ul>
+            </p>
         </aside>
     </div>
     <footer>
-        <div>
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#">&laquo;</a>
-                </li>
-                <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">4</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">5</a>
-                </li>
-                <li class="page-item">
-                    <a class="page-link" href="#">&raquo;</a>
-                </li>
-            </ul>
-            <p style="text-align: center;">Todos los derechos reservados | QSD</p>
-        </div>
+        <p>Todos los derechos reservados | QSD</p>
     </footer>
 
 

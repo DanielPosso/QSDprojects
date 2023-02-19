@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootStrap</title>
     <!--CSS-->
-    <link rel="stylesheet" href="./css/styleNewspaper.css">
+    <link rel="stylesheet" href="../css/styleNewspaper.css">
     <!--BootsWatch-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css"
-        integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+            integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css"
+        integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/noticias.ico" type="image/x-icon">
 </head>
+
 <body>
-    <head>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-                    aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarColor02" style="">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="search" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
+
+    <header>
+        <nav class="navBar">
+            <div class="containerNavbar">
+                <ul>
+                    <li>
+                        <img src="../assets/css-3.png" width="30em">
+                        <a class="mainNameNavbar" href="../newspaper.html">Newspaper</a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./Flexbox.html">Flexbox
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./grids.html">Grids</a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./bootstrap.html">BootStrap</a>
+                    </li>
+                </ul>
+                <form>
+                    <input type="search" placeholder="Search">
+                    <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
             </div>
         </nav>
-    </head>
+    </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos rem ut quas excepturi voluptas deleniti at doloribus architecto reprehenderit culpa neque, non tenetur voluptate numquam asperiores commodi dolor similique?</p>
-        <p>Para volver al menú principal click <a href="../newspaper.html">aquí</a></p>
+        <div class="containerBootstrap">
+            <h1>¿Qué es BootStrap?</h1>
+            <p>Bootstrap es un framework front-end que fornece estructuras de CSS para la creación de sitios web y
+                aplicaciones responsivas de forma rápida y simple. Además, puede lidiar con sitios web de desktop y
+                páginas de
+                dispositibos mobiles de la misma forma.
+                Originalmente, Bootstrap fue desarrollado para Twitter por un grupo de desarrolladores liderados por
+                Mark Otto y Jacob Thornton. Tornandose una de las estructuras de front-end y proyectos de código abierto
+                más populares del
+                mundo.
+                Antes de ser una estructura de código fuente abierto, Bootstrap era conocido como Twitter Blueprint.
+                Después de algunos meses de desarollo, Twitter realizó su primer Hack Week: el proyecto ganó una gran
+                popularidad cuando
+                desarrolladores de todos los niveles de habilidad comenzaron a utilizar el framework sin ninguna
+                orientación externa. Tras
+                el evento, ello sirvió como guía de estilo para el desarrollo de herramientas internas en la empresa por
+                más de un año
+                antes de su lanzamiento tornarse publico.</p>
+            <img src="../assets/bootstrap.jpeg" alt="bootstrap structure">
+            <br>
+            <p>Para volver al menú principal click <a href="../newspaper.html">aquí</a></p>
+        </div>
     </main>
     <footer>
         <p>Todos los derechos reservados | QSD</p>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
         </script>
 </body>
+
 </html>
